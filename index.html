@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +8,164 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <title>Whiskey Drop | Taste a new whiskey every month</title>
 </head>
+
 <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-default">   <!-- could have "navbar fixed-top" but does not work well for this example -->
+        <div class="container-fluid">
+            <!-- Logo -->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    Whiskey Drop
+                </a>
+            </div>
+            <!-- Navbar -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li class="visible-xs"><a href="/">Sign In</a></li>
+            </ul>
+            <!-- Message -->
+            <div class="navbar-header navbar-right hidden-xs">
+                <a href="/login" class= 'btn btn-default navbar-btn'>Sign Up</a>
+                <p class="navbar-text"><i>Great whiskey delivered to your door</i></p>
+            </div>
+        </div>
+    </nav>
     <article class="container">
+        <!-- Alert -->
+        <div class="row hidden-xs">
+            <div class="col-xs-12">
+                <div class="alert alert-warning">
+                    <strong>Sale Now On!</strong> With our fantastic sale, get 12 months subscription for the price of 6! <a href="">See here for details</a>
+                </div>
+            </div>
+        </div>
         <!-- Callout -->
-        <section class="callout">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
-            <p class="lead">Sign up today and start recieving the world's best whiskeys every month. <s>£19.99</s> <strong><mark>First one is free!</mark></strong></p>
-            <p><button class="btn btn-lg btn-success">Sign up!</button></p>
-            <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly</small></p>
-        </section>
+        <div class="row">
+            <div class="col-xs-12">
+                <section class="callout jumbotron text-center">
+                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <p class="lead">Sign up today and start receiving the world's best whiskeys every month. <s class="hidden-xs">£19.99</s> <span class= "visible-xs"><br></span> <strong><mark>First one is free!</mark></strong></p>
+                    <p><button class="btn btn-lg btn-success">Sign up!</button></p>
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly</small></p>
+                </section>
+            </div>
+        </div>
         <!-- /.Callout -->
-        <hr>
         
+
         <!-- Quotes -->
         <section class="quotes">
-            <h2 class="text-uppercase">Quotes:</h2>
-            <div class="quotes">
-                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                <p>- Charlie Biggle</p>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class= "page-header">
+                    <h2 class="text-uppercase">Quotes:</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class= "media">
+                       <div class="media-left hidden-xs">
+                           <img src="image-1.jpg" class="img-circle media-object" height=100 width=100>
+                    </div>
+                    <div class="media-body">
+                <blockquote class="quotes">
+                    <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                    <footer>Charlie Biggles on <cite title="Twitter">Twitter</cite></footer>
+                </blockquote>
+                </div>
+                </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                     <div class="media">
+                         <div class="media-left hidden-xs">
+                             <img src="image-2.jpg" class="img-circle media_object" height=100 width=100>
+                         </div>
+                         <div class="media-body">
+                <blockquote class="quote">
+                    <p>I haven't been sober for months!</p>
+                    <footer>Jenny Robinson on <cite title="Twitter">Twitter</cite></footer>
+                </blockquote>
+                </div>
              </div>
-             <div class="quote">
-                 <p>I haven't been sobre for months!</p>
-                 <p>- Jenny Robinson</p>
-             </div>
+                </div>
+            </div>
         </section>
         <!-- /.Quotes -->
-        <hr>
         
+
         <!-- Features -->
         <section class="features">
-            <h2>Features:</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class= "page-header">
+            <h2 class="text-uppercase">Features:</h2>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
             <div class="feature">
-                <h3>Feature 1</h3>
+                <h3><span class="glyphicon glyphicon-yen hidden-xs"></span>Feature 1 <span class="label label-success">New!</span></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, asperiores neque porro incidunt reiciendis, hic nulla sapiente at odit architecto quia veniam quidem repellendus, facere modi nihil eaque natus? Qui!</p>
-                <p></p>
+                <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
             </div>
-            <div class="feature">
-                <h3>Feature 2</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+             <div class="feature">
+                <h3><span class="glyphicon glyphicon-ruble hidden-xs"></span>Feature 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, consequatur iusto atque ullam, consequuntur similique. Repellat nisi consequuntur, voluptates beatae iusto minus, omnis, placeat assumenda, illum sequi deleniti eos dolor.</p>
+                <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
             </div>
+            </div>
+            <div class="col-xs-12 hidden-md col-lg-4">
             <div class="feature">
-                <h3>Feature 3</h3>
+                <h3><span class="glyphicon glyphicon-circle-arrow-right hidden-xs"></span>Feature 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tenetur quis voluptate dolores libero hic nulla, dicta a illo, molestias ex ad culpa, esse odit vero eum quidem animi ducimus.</p>
+                <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
+            </div>
+            </div>
             </div>
         </section>
         <!-- /.Features -->
+        
+
+        <!-- Table -->
+        <section>
+            <h2>Monthly Favourites</h2>
+            <h3 class="text-muted">Top five whiskey's of the month!</h3>
+            <table class="table table-bordered">
+                <tr>
+                    <td class="lead">Name</td>
+                    <td class="lead">Origin</td>
+                </tr>
+                <tr>
+                    <td>Malt Whiskey</td>
+                    <td>Scotland</td>
+                </tr>
+                <tr>
+                    <td>Grain Whiskey</td>
+                    <td>Scotland & Ireland</td>
+                </tr>
+                <tr>
+                    <td>Bourbon</td>
+                    <td>US-Kentucky</td>
+                </tr>
+                <tr>
+                    <td>Tennesse Whiskey</td>
+                    <td>Us-Tennesse</td>
+                </tr>
+                <tr>
+                    <td>Rye Whiskey</td>
+                    <td>Canada</td>
+                </tr>
+
+
+            </table>
+        </section>
     </article>
 </body>
+
 </html>
